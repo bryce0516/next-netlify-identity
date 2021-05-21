@@ -21,6 +21,7 @@ export default function Navbar() {
               <a>Guides</a>
             </Link>
           </li>
+          {user && <li>{user.email}</li>}
           {user === null ? (
             <li onClick={login} className="btn">
               Login/Signup
